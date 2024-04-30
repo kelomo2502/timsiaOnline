@@ -1,10 +1,9 @@
-import React from "react";
+import { FaShippingFast } from "react-icons/fa";
 import {
+  BsFillCreditCardFill,
   BsCartCheck,
   BsClockHistory,
-  BsFillCreditCardFill,
 } from "react-icons/bs";
-import { FaShippingFast } from "react-icons/fa";
 
 const data = [
   {
@@ -29,16 +28,17 @@ const data = [
   },
 ];
 
-const HomeInfoBox = ({ icon, heading, text }) => {
+const HomeInfoBox = () => {
   return (
     <div className="infoboxes --mb2">
-      {data.map((item, index) => {
+      {data.map((info, index) => {
+        const { icon, heading, text } = info;
         return (
           <div className="infobox" key={index}>
-            <div className="icon">{item.icon}</div>
+            <div className="icon">{icon}</div>
             <div className="text">
-              <h4>{item.heading}</h4>
-              <p className="--text-sm">{item.text}</p>
+              <h4>{heading}</h4>
+              <p className="--text-sm">{text}</p>
             </div>
           </div>
         );

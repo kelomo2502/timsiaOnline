@@ -1,4 +1,4 @@
-// https://i.ibb.co/g4RDXbZ/phone2.jpg
+ // https://i.ibb.co/g4RDXbZ/phone2.jpg
 
 export const sliderData = [
   {
