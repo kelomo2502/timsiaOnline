@@ -105,7 +105,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  row-gap: 2rem;
+  gap: 2.5rem;
 }
 .logo-color{
   color: orange;
@@ -124,15 +124,17 @@
   margin-bottom: 1rem;
 }
 
-.link-heading:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 25px;
-  height: 2px;
-  background-color: #fff;
-}
+// .link-heading:before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 25px;
+//   height: 2px;
+//   background-color: #fff;
+//   border: 2px solid red;
+//   margin-left: 10px;
+// }
 
 .footer-links {
   display: flex;

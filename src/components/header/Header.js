@@ -4,6 +4,7 @@ import { FaShoppingCart, FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import styles from "./Header.module.scss";
 
+
 export const logo = (
   <div className={styles.logo}>
     <Link to={"/"}>
@@ -35,7 +36,7 @@ const Header = () => {
     setShowMenu(false);
   };
   return (
-    <header>
+    <header className={styles.fixed}>
       <div className={styles.header}>
         {logo}
         <nav
